@@ -8,11 +8,15 @@
     --cor--botao:#167BF7;
     --cor-fundo:#00030c;
     --fonte--principal:'Inter', sans-serif;
+    --botao-efeito:#5ca5ff;
+
 }
 
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 body{
@@ -21,6 +25,7 @@ body{
     font-family: var(--fonte--principal);
     font-size: 16px;
     font-weight: 400;
+    
 }
 
 /* Primeira Seção
@@ -62,6 +67,11 @@ body{
     color: var(--cor-titulo-principal);
     display: block;
     margin-bottom: 1em;
+    transition: 0.4s all ease-in-out;
+}
+
+.container__botao:hover{
+    transform: scale(1.1);
 }
 
 .botao__secundario{
@@ -108,4 +118,63 @@ body{
 .secundaria__botao{
     display: inline-block;
     margin-top: 1em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    list-style: none;
+    margin: 5em 0 ;
+}
+
+.dispositivos__titulo{
+    font-size: 32px;
+    color: var(--cor-titulo-principal);
+}
+
+.lista__titulo{
+    font-size: 25px;
+    color: var(--cor-titulo-principal);
+}
+
+/* Footer
+--------------------------------------------------- */
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 4em ;
+}
+
+.rodape__list{
+    display: flex;
+    gap: 1.3em;
+}
+
+.lista__link a{
+    color: var(--cor-titulo-principal);
+    font-size: 1em;
+}
+
+.lista__link a:hover{
+    color: var(--cor--botao);
+}
+
+.lista__link a:active{
+    color: var(--cor-secundaria);
+}
+
+.rodape__texto{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    margin-bottom: 0.5em;
 }
