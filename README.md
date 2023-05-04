@@ -6,7 +6,7 @@
 <p align="center">Um site para divulgação da Alura Plus, uma plataforma de streaming com os conteúdos educacionais da Alura.</p>
 
 <h4 align="center"> 
-    :hotsprings: Não possui o Responsivo  :hotsprings:
+    :hotsprings: Possui apenas o Responsivo Mobile  :hotsprings:
 </h4>
 
 
