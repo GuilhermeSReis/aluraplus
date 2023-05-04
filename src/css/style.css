@@ -28,6 +28,20 @@ body{
     
 }
 
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--cor-fundo);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:var(--cor--botao);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    
+}
+
 /* Primeira Seção
 ------------------------------------------------------------------------------------- */
 
@@ -177,4 +191,43 @@ body{
     font-weight: 400;
     color: var(--cor-secundaria);
     margin-bottom: 0.5em;
+}
+
+
+/* Responsivo */
+
+@media screen and (max-width:768px) {
+    .container{
+        display: block;
+        background-image: none;
+        
+    }
+
+    .container__img{
+        width: 50vw;
+    }
+
+    .container__caixa{
+        margin: 2em 2em;
+    }
+
+    .secundaria{
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario_imagem{
+        width: 50vw;
+    }
+
+    .dispositivos__lista{
+        /* display: block; */
+        flex-direction: column;
+    }
+
+    .rodape__list{
+        display: block;
+        text-align: center;
+    }
+    
 }
